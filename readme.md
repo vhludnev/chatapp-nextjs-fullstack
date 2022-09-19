@@ -11,7 +11,7 @@
 - Notifications: message is typing, chat join/leave, auth form validation, user info updated (error, pending, success)
 - Chat options: group messaging, private messaging, new message alert, users online, chat room members online
 - Chat messages' variations: text, emojis, text + emojis
-- Extra: private messages are backed up on server
+- Storage: private messages are backed up on a Mongo db server
 
 <br />
 
