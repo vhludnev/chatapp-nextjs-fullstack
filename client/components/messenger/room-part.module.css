@@ -1,0 +1,116 @@
+.room {
+   display: flex;
+   align-items: center;
+   padding: 8px 10px;
+   cursor: pointer;
+   border-radius: 25px;
+   width: fit-content;
+   align-self: center;
+}
+ 
+.room:hover {
+   background-color: rgb(245, 243, 243);
+}
+
+.room svg {
+   height: 16px;
+   width: 16px;
+}
+ 
+.roomName {
+   margin: 0 20px;
+   color: #fff;
+   font-size: 0.85rem;
+}
+
+.activeRoom {
+   background-color: grey;
+   color: #fff;
+   pointer-events: none;
+}
+
+.roomUsersWrapper {
+   display: flex;
+   flex-direction: column;
+   line-height: 26px;
+   margin-top: 30px;
+   font-size: 0.9rem;
+   /* list-style: circle; */
+}
+
+.roomUsersWrapper span {
+   height: 2.2rem;
+}
+
+.roomUsersWrapper svg {
+  height: 28px !important;
+}
+ 
+.roomUsersWrapper li {
+   position: relative;
+   color: #fff;
+   font-size: 0.7rem;
+   text-align: left;
+   padding-left: 2rem;
+}
+
+.roomUsersWrapper li::before {
+   position: absolute;
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   top: 9px;
+   left: 14px;
+   border-radius: 25px;
+   background: #fff;
+}
+ 
+/* @media screen and (max-width: 768px) {
+   .roomName {
+     display: none;
+   }
+} */
+
+@media (min-width: 768px) {
+   .room {
+      margin-top: 8px;
+      align-self: unset;
+      padding: 10px;
+   }
+
+   .room svg {
+      height: inherit;
+      width: inherit;
+   }
+
+   .roomName {
+     color: #000;
+     font-size: 1rem;
+     font-weight: 500;
+   }
+
+   .activeRoom span, .activeRoom:hover {
+      color: #fff;
+   }
+   .activeRoom svg {
+      fill: #fff;
+   }
+
+   .roomUsersWrapper {
+      padding-left: 30px;
+   }
+
+   .roomUsersWrapper li {
+      color: #333;
+      font-size: 0.8rem;
+      text-align: unset;
+      padding-left: unset;
+   }
+
+   .roomUsersWrapper li::before {
+      background: #555;
+      left: -17px;
+   }
+}
+ 

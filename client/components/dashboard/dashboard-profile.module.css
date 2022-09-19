@@ -1,0 +1,45 @@
+.profile {
+   margin: 1rem auto;
+   text-align: center;
+}
+
+.profile > span {
+   border-radius: 4rem;
+}
+
+.profile h1 {
+   font-size: 2rem;
+}
+
+.profile img {
+   object-fit: cover;
+}
+
+.profile button {
+   cursor: pointer;
+   border: none;
+   border-radius: 25px;
+   padding: 8px;
+   width: 46px;
+   height: 46px;
+}
+
+.profile button:hover {
+   transition: all .5s ease-in;
+   background-color: red;
+}
+
+.profile button:hover svg {
+   fill: #fff;
+}
+
+.profile p {
+   font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+   .profile {
+      margin: 3rem auto;
+      padding-left: 1rem;;
+   }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "websocket-chat-room-nextjs",
+  "version": "1.0.0",
+  "description": "Realtime chat app with chat rooms",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "javascript"
+  ],
+  "author": "VH",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "emoji-picker-react": "^3.6.2",
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.6.1",
+    "netlify-cli": "^11.7.1",
+    "next": "12.2.3",
+    "next-auth": "^4.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "socket.io-client": "^4.5.1",
+    "timeago.js": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.2"
+  }
+}

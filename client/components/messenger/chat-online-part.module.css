@@ -1,0 +1,79 @@
+.chatMenuInput {
+   width: 90%;
+   padding: 10px 5px;
+   border: none;
+   border-bottom: 1px solid gray;
+   margin-bottom: 0.5rem;
+   caret-color: transparent;
+   display: none;
+}
+
+.chatMenuInput::placeholder {
+   padding-left: 5px;
+}
+
+.chatOnlineFriend {
+   display: flex;
+   position: relative;
+   align-items: center;
+   font-weight: 500;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-left: 6px;
+   gap: 0.9rem;
+}
+
+.chatOnlineFriend > svg {
+   position: absolute;
+   z-index: 100;
+   bottom: 0;
+   left: -19px;
+   background: var(--light-color);
+}
+
+.chatOnlineImgContainer {
+   position: relative;
+   min-width: 26px;
+}
+
+.chatOnlineImgContainer > span {
+   border-radius: 50%;
+}
+
+.chatOnlineImgContainer img {
+   object-fit: cover;
+}
+
+.chatOnlineName {
+   color: #fff;
+   font-size: 0.8rem;
+   text-align: start;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.chatActive {
+   font-weight: 900;
+}
+
+.chatOnlineBadge {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   position: absolute;
+   top: -2px;
+   right: -2px;
+}
+
+@media (min-width: 768px) {
+   .chatMenuInput {
+      display: block;
+      background: var(--light-color);
+   }
+
+   .chatOnlineName {
+      font-size: 0.9rem;
+      color: #000;
+   }
+}

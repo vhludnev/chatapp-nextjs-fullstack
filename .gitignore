@@ -1,0 +1,15 @@
+# dependencies
+**/node_modules
+
+
+# production
+**/build
+
+# env files
+**/.env*.local
+**/.env
+
+# temp files
+**/__*.*
+**/__*__.*
+

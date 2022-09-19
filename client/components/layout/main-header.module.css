@@ -1,0 +1,104 @@
+.header {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5%;
+   height: 5rem;
+   background-color: #202020;
+}
+ 
+.logo {
+   font-size: 1.5rem;
+   color: white;
+   font-family: 'Fira', sans-serif;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #94fdfd;
+}
+ 
+.logo a, .logo a:active {
+   text-decoration: none;
+   color: #94fdfd;
+}
+
+.navigation > ul {
+   display: flex;
+   gap: 1rem;
+}
+
+.navigation ul > span {
+   position: relative;
+}
+ 
+.navigation a {
+   text-decoration: none;
+   font-size: 0.8rem;
+}
+
+.auth, .auth button {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   padding-right: 0;
+   padding-left: 0;
+   padding-top: 0.5rem;
+}
+
+.auth button {
+   padding-top: 0.15rem;
+}
+
+.portrait {
+   border-radius: 3rem;
+   cursor: pointer;
+}
+
+ 
+@media (min-width: 968px) {
+   .header {
+      padding: 1rem 10%;
+   }
+
+   .logo {
+     font-size: 2rem;
+   }
+ 
+   .logo a, .navigation a, .auth button svg {
+      transition: all .35s ease-in-out;
+   }
+
+   .navigation a {
+      font-size: 1.2rem;
+   }
+
+   .navigation > ul {
+      gap: 2rem;
+   }
+}
+
+@media (min-width: 536px) {
+   .navigation ul li:not(:nth-child(3)) {
+      padding-top: 0.35rem;
+   }
+   .navigation a {
+      font-size: 1rem;
+   }
+   .auth, .auth button {
+      padding-top: 0;
+   }
+}
+
+@media screen and (hover: hover) {
+   .logo a:hover, .navigation a:hover {
+      color: #fff;
+   }
+   /* .dropdown a:hover {
+      color: #94fdfd;
+   } */
+   .auth button:hover svg, .auth div:hover svg {
+      fill: #94fdfd;
+   }
+}

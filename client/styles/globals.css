@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+	--light-color: #e6e9ff;
+  --light-grey: #C8C8C8;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+	padding: 0; */
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Lato', sans-serif;
+  color: #414141;
+  background: var(--light-color);
+} 
+
+main {
+  min-height: calc(100vh - 80px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  color: #2b2b2b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.showAllBtn {
+  padding-top: 1rem;
+}
+
+.dashboardWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.active {
+  color: #fff;
+}
+
+.emoji-picker-react .emoji-scroll-wrapper {
+  overflow-x: hidden !important;
+}
+
+@media (min-width: 768px) {
+  .dashboardWrapper {
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .emoji-picker-react .native {
+    height: 15px !important;
+    width: 15px !important;
+    font-size: 15px !important;
+  }
+}
