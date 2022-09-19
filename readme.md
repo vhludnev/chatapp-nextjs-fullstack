@@ -19,7 +19,7 @@
 
 | Private chat screen | Group chat mobile screen | User profile screen |
 | ------ | ------ | ------ |
-| <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat.png" width="200" alt="private chat room screen" /> | <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat_mobile.png" width="200" alt="group chat screen" /> | <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat_auth.png" width="200" alt="user profile screen" /> |
+| ![private chat room screen](client/previews/chat.png) | ![group chat screen](client/previews/chat_mobile.png) | ![user profile screen](client/previews/chat_auth.png) |
 
 <br/><br/>
 
