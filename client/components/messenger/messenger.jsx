@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import Room from './room-part';
 import Message from './message-part';
 import ChatOnline from './chat-online-part';
@@ -10,6 +10,7 @@ import MessengerContext from '../../store/messenger-context';
 import classes from './messenger.module.css';
 
 const Messenger = () => {
+  const [receiverName, setReceiverName] = useState(null)
   const textareaRef = useRef();
   const scrollRef = useRef();
   const feedbackRef = useRef();
@@ -19,6 +20,16 @@ const Messenger = () => {
   const { handleMessageSubmit, socket, user, users, showEmojis, toggleEmoji, typingMsg, currentChat, messages } = useContext(MessengerContext)
   
   useEffect(() => {
+    // update placeholder text
+    if (!currentChat?.group) {
+      const rId = currentChat?.members.find(el => el !== user._id)
+      const receiver = users?.find(u => u._id === rId)
+      setReceiverName(receiver?.name)
+    } else {
+      setReceiverName(null)
+    }
+
+    // typing event hanlers
     const handleTyping = () => {
       return socket.current.emit('typing', ({ name: user.name, chatId: currentChat?._id, id: currentChat?.members && currentChat?.members.find(m => m !== user._id), room: currentChat?._id }))
     }
@@ -80,7 +91,7 @@ const Messenger = () => {
                     ref={textareaRef}
                     maxLength={150}
                     className={classes.chatMessageInput}
-                    placeholder="write something..."
+                    placeholder={receiverName ? `write something to ${receiverName}` : "write something..."}
                     onInput={AutoGrow}
                   ></textarea>
                   <BsEmojiSmile color='orange' size={26} onClick={toggleEmoji} />

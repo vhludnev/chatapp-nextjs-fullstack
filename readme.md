@@ -1,4 +1,4 @@
-## Next js, Express, Socket.io chat pro app
+## Next js, Express, Mongo db, Socket.io chat pro app
 
 - Next js
 - React Context api
@@ -15,16 +15,13 @@
 
 <br />
 
-<!-- ## _Previews_
+## _Previews_
 
-| Join room screen | Chat screen | Private chat screen |
+| Private chat screen | Group chat mobile screen | User profile screen |
 | ------ | ------ | ------ |
-| <img src="https://github.com/vhludnev/socketio-chat-pro/blob/main/previews/joinroom.png" width="200" alt="join room screen" /> | <img src="https://github.com/vhludnev/socketio-chat-pro/blob/main/previews/chatscreen.png" width="200" alt="chat screen" /> | <img src="https://github.com/vhludnev/socketio-chat-pro/blob/main/previews/privatechat.png" width="200" alt="private chat screen" /> |
+| <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat.png" width="200" alt="private chat room screen" /> | <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat_mobile.png" width="200" alt="group chat screen" /> | <img src="https://github.com/vhludnev/chatapp-nextjs-fullstack.git/blob/master/client/previews/chat_auth.png" width="200" alt="user profile screen" /> |
 
 <br/><br/>
 
-| Mobile chat screen | Mobile chat screen menu |
-| ------ | ------ |
-| <img src="https://github.com/vhludnev/socketio-chat-pro/blob/main/previews/mobile1a.png" width="200" alt="mobile chat screen" /> | <img src="https://github.com/vhludnev/socketio-chat-pro/blob/main/previews/mobile2.png" width="200" alt="mobile chat screen menu" /> | -->
 
 [View the app](https://chatroomspro.netlify.app)

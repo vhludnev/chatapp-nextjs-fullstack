@@ -20,12 +20,14 @@ const MenuNav = () => {
    }
 
    return (
-     <ul className={classes.dropdown}>
+     <div className={classes.dropdown}>
          {user && (
+         <ul>
             <li>
                <Link href='/dashboard'>Profile</Link>
                <hr style={{color: 'grey', margin: '15px 0 0'}}/>
             </li>
+         </ul>
          )}
          <div className={classes.mobile}>
             <Room />
@@ -39,7 +41,7 @@ const MenuNav = () => {
             : <button onClick={() => router.push('/auth')}><SignInIcon /></button>
          }
          </li>
-     </ul>
+     </div>
    )
 }
 

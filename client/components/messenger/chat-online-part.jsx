@@ -87,7 +87,7 @@ const ChatOnline = () => {
                 // blurDataURL={`data:image/svg+xml;base64,${toBase64(NoImageIconStr)}`}
                 alt=""
               />
-              <div className={classes.chatOnlineBadge} style={{backgroundColor: onlineBadge(o) ? 'limegreen': 'var(--light-grey)'}}></div>
+              {user && <div className={classes.chatOnlineBadge} style={{backgroundColor: onlineBadge(o) ? 'limegreen': 'var(--light-grey)'}}></div>}
             </div>
             <span className={activeChat(o) ? [classes.chatOnlineName, classes.chatActive].join(" ") : classes.chatOnlineName}>{o.name}</span>
           </div>

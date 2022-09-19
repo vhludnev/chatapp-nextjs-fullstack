@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { useSession } from 'next-auth/react';
 import { useState, useRef, useContext, useEffect } from 'react';
 import LazyImage from '../ui/lazy-image';
-import MessengerContext from '../../store/messenger-context';
 import OptionsMenu from '../optionsmenu/optionsmenu';
+import RoomIcon from '../icons/room';
+import MessengerContext from '../../store/messenger-context';
 
 import classes from './main-header.module.css';
 
@@ -48,18 +49,21 @@ const MainHeader = () => {
             </Link>
          </div>
          <nav className={classes.navigation}>
-            <ul>
+            <div>
                <span className={classes.auth} onClick={toggleDropdown} ref={ref} >
-                  <LazyImage 
-                     className={classes.portrait}  
-                     src={session?.user?.picture || '/images/noimage.jpg'} 
-                     alt='portrait' 
-                     width={30} 
-                     height={30}
-                  />
+                  {session?.user ? 
+                     <LazyImage 
+                        className={classes.portrait}  
+                        src={session?.user?.picture || '/images/noimage.jpg'} 
+                        alt='portrait' 
+                        width={30} 
+                        height={30}
+                     /> : 
+                     <RoomIcon />
+                  }
                   {dropdown && <OptionsMenu />}
                </span>                 
-            </ul>
+            </div>
          </nav>
       </header>
    );

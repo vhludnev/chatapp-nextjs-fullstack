@@ -24,12 +24,12 @@
    color: #94fdfd;
 }
 
-.navigation > ul {
+.navigation > div {
    display: flex;
    gap: 1rem;
 }
 
-.navigation ul > span {
+.navigation div > span {
    position: relative;
 }
  
@@ -49,6 +49,12 @@
 
 .auth button {
    padding-top: 0.15rem;
+}
+
+.auth > svg {
+   fill: #fff;
+   width: 30px;
+   height: 30px;
 }
 
 .portrait {
@@ -74,7 +80,7 @@
       font-size: 1.2rem;
    }
 
-   .navigation > ul {
+   .navigation > div {
       gap: 2rem;
    }
 }

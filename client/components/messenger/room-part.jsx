@@ -41,7 +41,7 @@ const Room = () => {
             <ul className={classes.roomUsersWrapper}>
                <span><UsersIcon /></span>
                {activeRoomUsers?.map(u => (
-                  <li key={u.userId} className={classes.roomUser}>{u.name}</li>
+                  <li key={u.userId} className={classes.roomUser}><span>{u.name}</span></li>
                ))}
             </ul>
          )}

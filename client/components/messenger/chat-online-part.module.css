@@ -12,15 +12,25 @@
    padding-left: 5px;
 }
 
+.chatOnline {
+   max-height: 40vh;
+   overflow: hidden;
+   overflow-y: auto;
+}
+
 .chatOnlineFriend {
    display: flex;
    position: relative;
    align-items: center;
    font-weight: 500;
    cursor: pointer;
-   margin-top: 10px;
+   padding-top: 10px;
    margin-left: 6px;
    gap: 0.9rem;
+}
+
+.chatOnlineFriend:last-child {
+   border-bottom: none;
 }
 
 .chatOnlineFriend > svg {
@@ -45,7 +55,7 @@
 }
 
 .chatOnlineName {
-   color: #fff;
+   /* color: #F5F5F5; */
    font-size: 0.8rem;
    text-align: start;
    overflow: hidden;
@@ -70,6 +80,14 @@
    .chatMenuInput {
       display: block;
       background: var(--light-color);
+   }
+
+   .chatOnline {
+      max-height: unset;
+   }
+
+   .chatOnlineFriend {
+      border-bottom: 1px solid #D8D8D8;
    }
 
    .chatOnlineName {

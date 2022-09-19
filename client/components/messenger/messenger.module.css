@@ -83,13 +83,20 @@
 }
 
 .chatMessageInput::placeholder {
-   font-size: 0.9rem;
+   font-size: 0.8rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }
 
 .chatMessageInput:focus {
    outline: none;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
+
+.chatMessageInput:focus::placeholder {
+   color: transparent;
+ }
 
 .chatMessageInputWrapper > svg {
    position: absolute;
@@ -196,6 +203,10 @@
 
    .arrow {
       display: none;
+   }
+
+   .chatMessageInput::placeholder {
+      font-size: 0.9rem;
    }
 
    .chatBoxBottom {
